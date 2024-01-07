@@ -25,4 +25,4 @@ Copia el archivo de ejemplo .env.example y crea un nuevo archivo .env. Ajusta la
 
 Inicia la aplicación en modo de desarrollo:
 
-    npm install
+    npm run start:dev
