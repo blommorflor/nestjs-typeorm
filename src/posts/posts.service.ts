@@ -47,6 +47,10 @@ export class PostsService {
     return await this.postRepository.softDelete(id);
   }
 
+  /**
+   * This function is used to liked a post
+   * @param id
+   */
   async likePost(id: number) {
     const post = await this.postRepository.findOneBy({ id });
     return await this.postRepository.update(id, { likes: post.likes + 1 });
